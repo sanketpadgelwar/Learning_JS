@@ -1,7 +1,50 @@
 
 
-
 /*
+2.11
+
+let userName = prompt('Enter username','');
+if(userName === 'Admin'){
+    let userPass = prompt('Enter Password','');
+        if(userPass === '' || userPass === null){
+            alert('Cancelled');
+        }else if(userPass === 'TheMaster'){
+            alert('Welcome');
+        }
+        else{
+            alert('I dont know you');
+        }
+}
+else if(userName === '' || userName === null){
+    alert('Canceled');
+}else{
+    alert('I dont know you');
+}
+
+
+First and Third will show
+if (-1 || 0) alert( 'first' );
+if (-1 && 0) alert( 'second' );
+if (null || -1 && 1) alert( 'third' );
+let age = prompt('Enter age','');
+if(!(!age >= 14 && age <=90)){
+    alert('correct');
+}
+if(age >= 14 && age <= 90){
+    alert("Correct");
+}
+alert(null || 2 && 3 || 4);
+ The precedence of AND && is higher than ||, so it executes first.
+
+The result of 2 && 3 = 3, so the expression becomes:
+
+null || 3 || 4
+Now the result is the first truthy value: 3. 
+alert(alert(1) && alert(2));    //first 1 then undefined because alert messages return undefined value
+alert(1 && null&& 2);   //null
+alert(alert(1)||2||alert(3));   //first 1 then 2
+alert(null||2||undefined);  //2
+
 2.10
 
 let login = prompt('Specify the user ','');
