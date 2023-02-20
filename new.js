@@ -1,6 +1,31 @@
 
 
 /*
+2.14
+let browser = prompt('which browser is it??','');
+switch (browser) {
+    case 'Edge':
+      alert( "You've got the Edge!" );
+      break;
+  
+    case 'Chrome':
+    case 'Firefox':
+    case 'Safari':
+    case 'Opera':
+      alert( 'Okay we support these browsers too' );
+      break;
+  
+    default:
+      alert( 'We hope that this page looks ok!' );
+  }
+
+2.13
+while(i){
+    alert(i--);
+}
+let i = 0;
+while (++i < 5) alert( i );
+
 2.11
 
 let userName = prompt('Enter username','');
